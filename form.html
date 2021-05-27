@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1-0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--styles-->
+    <link rel="stylesheet" href="style.css" />
+<title>Naz-T's Float Shop - Repair Service</title>
+
+<style>
+
+* {
+ font-family: 'Roboto', sans-serif;
+ color: white;
+}
+.menu {
+
+}
+
+.right {
+  float:right;
+  margin-right: 10px;
+}
+
+.main {
+  font-family: "Bangers";
+  text-align: center;
+  font-size: 70px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1em; /* a */
+  max-height: 3em; /* a x number of line to show (ex : 2 line)  */
+  flex-shrink: inherit;
+  height: cover;
+  width: auto;
+
+}
+
+.logo {
+  width: 350px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+  border-radius: 50%;
+}
+
+.sub {
+  text-align: center;
+  width: 99%;
+  margin:auto;
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+}
+
+.mission {
+  text-align: center;
+  background: #4c4f4d;
+  width: 99%;
+  margin: auto;
+  padding: 5px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+}
+
+
+.des {
+  text-align: center;
+  border:;
+  background: #4c4f4d;
+  width: 99%;
+  margin:auto;
+  padding: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 25px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: block;
+}
+
+/*nav*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color:;
+  overflow: hidden;
+
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  position: inherit;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: darkgrey;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.gal {
+  text-align: center;
+  font-family: "Bangers";
+  font-size: 35px;
+
+}
+
+/*GALLERY*/
+.gallery1 {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: auto;
+  flex-direction: row;
+}
+
+.gallery__img {
+  width: 350px;
+  height: 350px;
+}
+
+
+#social_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ .time {
+  text-align: center;
+  font-size: 20px;
+}
+.number {
+  text-align: center;
+
+}
+
+.topIcon {
+  float:right;
+  display: block;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+    }
+
+.hours, .contact {
+  font-family: "Bangers";
+  text-align: center;
+  font-size: 35px;
+}
+
+header {
+position: relative;
+width: 99%;
+text-align: center;
+color: white;
+-webkit-transition: .4s;
+transition: .4s;
+
+
+}
+ body {
+   background-color: #30302F;
+
+ }
+ .pushIt {
+   float: left;
+   position: relative;
+   margin: 15vh;
+ }
+
+.repair_img {
+  width: 350px;
+  height: 350px;
+}
+
+.repair_price {
+  display: flex;
+
+}
+
+.repairDes {
+  font-family: "Bangers";
+  text-align: center;
+  position: relative;
+  float: left;
+
+}
+
+.repair_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: auto;
+  flex-direction: row;
+}
+.formTitle {
+  font-family: "Bangers";
+  text-align: center;
+}
+
+.formDes {
+  text-align: center;
+}
+
+.form {
+  padding: 12px 20px;
+  background-color: #171716;
+  border: solid black 3px;
+
+}
+
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color:;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+
+  </head>
+
+  <header>
+      <div class="topIcon">
+        <a href="https://www.facebook.com/NazTFloat/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" width="35px" height="35px"></a>
+        <a href="https://www.instagram.com/naz_t_rob/" target="_blank"><img src="https://hasselfallas.com/wp-content/uploads/2021/01/instagram-logo-png-transparent-0.png" width="35px" height="35px"></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Robm@onewheelnwa.com&su=SUBJECT&body=BODY&bcc=rjmahle.rm@gmail.com" target="_blank"><img src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png" width="35px" height="35px"></a>
+      </div>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <div class="topnav" id="myTopnav">
+    <a href="index.html">Home</a>
+    <a href="service.html">Service and Repair</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+
+<h1 class="main" id="home">Services and Repairs form</h1>
+<a href="index.html"><img class="logo" src="logo.jpeg"><a/>
+
+  </header>
+
+
+    <p class="sub" id="about">Repair Service Open today until 10:00 PM<br><br>
+Call/ e-mail now to make an appointment <a href="tel:4792955872"> (479)295-5872</a><br><br>
+or if you see what you need, fill out our form and get things started right away!</p>
+
+<h2 class="formTitle">Fill out our form to schedule your services now</h2>
+<p class="formDes">Once you information is submitted Rob will get back to you via e-mail ASAP to confirm your serivces, date and time.<br><br>(Form data sent through Getforms secure database)</p>
+
+<p>* indicates a required input field</p>
+
+<div class="form">
+  <form action="https://getform.io/f/9a70468f-c8cd-4cc0-9c0b-253f19aceae6" method="POST" enctype="multipart/form-data">
+    <label for="fname">*First name:</label>
+    <input type="text" id="fname" name="fname" value="" style="color: black" required><br><br>
+    <label for="lname">*Last name:</label>
+    <input type="text" id="lname" name="lname" value="" style="color: black" required><br><br>
+    <label for="phone">*Phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-145-1678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="color: black" required><br><br>
+    <label for="email">*Enter your email:</label>
+    <input type="email" id="email" name="email" style="color: black" required><br><br>
+    <label for="date">*Desired date of service:</label>
+    <input type="date" name="date" value="" style="color: black" required><br><br>
+    <label for="services">*Requested Services:</label><br><br>
+      <input type="checkbox" id="s1" name="s1" value="xrtire">
+      <label for="s1">XR Tire Change ($25-$50)</label><br><br>
+      <input type="checkbox" id="s2" name="s2" value="pintTire">
+      <label for="s2">Pint Tire Change ($25-$65)</label><br><br>
+      <input type="checkbox" id="s3" name="s3" value="grip">
+      <label for="s3">Remove/Install Grip Tape ($10)</label><br><br>
+      <input type="checkbox" id="s4" name="s4" value="screw">
+      <label for="s4">Stripped Screw Thread Repair ($35 each)</label><br><br>
+      <input type="checkbox" id="s5" name="s5" value="light">
+      <label for="s5">Head Light Repair ($150)</label><br><br>
+      <input type="checkbox" id="s6" name="s6" value="waterP">
+      <label for="s6">Waterproof One Wheel ($125+)</label><br><br>
+      <input type="checkbox" id="s7" name="s7" value="bearing">
+      <label for="s7">Bearing Installation Labor ($150)</label><br><br>
+      <input type="checkbox" id="s8" name="s8" value="battery">
+      <label for="s8">Battery Install for XR & Pint ($100)</label><br><br>
+    <label for="other">Other services not listed:</label>
+    <textarea id="other" name="other" rows="4" cols="50" style="color: black" placeholder="Let us know what we can do for you!">
+    </textarea>
+
+    <input type="submit" value="Submit" style="color: black">
+  </form>
+</div>
+
+      <h2 class="contact" id="contact">Contact us</h2>
+        <p class="number"><a href="tel:4792955872">(479)295-5872</a></p>
+        <h4 class="hours">Business Hours</h4>
+          <p class="time">Mon:	12:00 – 10:00 PM<br>
+      Tue:	12:00 – 10:00 PM<br>
+      Wed:	12:00 – 10:00 PM<br>
+      Thu:	12:00 – 10:00 PM<br>
+      Fri:	12:00 – 10:00 PM<br>
+      Sat:	8:00 AM – 10:00 PM<br>
+      Sun:	12:00 – 10:00 PM<p>
+
+        <div class="mission">
+            <p>The Mission of NazTfloaT is to provide honest OneWheel repair, quality workmanship and exceptional service. We aim to develop unmatched reputation with our customers, other shop owners, and our community. We believe that we work better together and do this by treating our employees, customers, and community as family.</p>
+        </div>
+
+      <footer>
+      <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services and Repairs</a>
+      </div>
+      <div id = "social_icons">
+        <a href="https://www.facebook.com/NazTFloat/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" width="35px" height="35px"></a>
+        <a href="https://www.instagram.com/naz_t_rob/" target="_blank"><img src="https://hasselfallas.com/wp-content/uploads/2021/01/instagram-logo-png-transparent-0.png" width="35px" height="35px"></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=Robm@onewheelnwa.com&su=SUBJECT&body=BODY&bcc=rjmahle.rm@gmail.com" target="_blank"><img src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png" width="35px" height="35px"></a>
+      </footer>
