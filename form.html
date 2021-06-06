@@ -42,12 +42,13 @@
 }
 
 .logo {
-  width: 350px;
-  height: 250px;
-  margin: auto;
-  position: relative;
-  border-radius: 50%;
-}
+  background-image: url("inventory1.jpeg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
 
 .sub {
   text-align: center;
@@ -303,7 +304,7 @@ input[type=button], input[type=submit], input[type=reset] {
   cursor: pointer;
 }
 
-.background {
+background {
   background-color: #444444;
   opacity: 0.8;
   background-image:  radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#000000 0.5px, #444444 0.5px);
@@ -316,9 +317,12 @@ input[type=button], input[type=submit], input[type=reset] {
   margin: auto;
   position: relative;
 }
+
 </style>
 
   </head>
+<div class="text">
+<div class="logo">
 <div class="background">
   <header>
       <div class="topIcon">
@@ -347,9 +351,8 @@ input[type=button], input[type=submit], input[type=reset] {
     }
   }
   </script>
-
+<div class="text">
 <h1 class="main" id="home">Services and Repairs form</h1>
-<a href="service.html"><img class="inventory" src="inventory.jpeg"><a/>
 
   </header>
 
@@ -360,9 +363,11 @@ or if you see what you need, fill out our form and get things started right away
 
 <h2 class="formTitle">Fill out our form to schedule your services now</h2>
 <p class="formDes">Once your information is submitted, Rob will get back to you via e-mail ASAP to confirm your serivces, date and time.<br><br>(Form data sent through Getform's secure database)</p>
-
+</div>
+</div>
+</div>
 <p>* indicates a required input field</p>
-
+</div>
 <div class="form">
   <form action="https://getform.io/f/9a70468f-c8cd-4cc0-9c0b-253f19aceae6" method="POST" enctype="multipart/form-data">
     <label for="fname">*First name:</label>
