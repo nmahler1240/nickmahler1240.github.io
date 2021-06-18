@@ -277,7 +277,90 @@ transition: .4s;
   margin: auto;
   position: absolute;
 }
+/*modals*/
+/* Style the Image Used to Trigger the Modal */
+#repair_img1, #repair_img2, #repair_img3, #repair_img4, #repair_img5, #repair_img6, #repair_img7, #repair_img8  {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
+#repair_img1:hover, #repair_img2:hover, #repair_img3:hover, #repair_img4:hover, #repair_img5:hover, #repair_img6:hover, #repair_img7:hover, #repair_img8:hover {
+  transform:scale(1.05);
+  opacity: 60%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 300px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+/*modlas end*/
 </style>
 
   </head>
@@ -324,36 +407,308 @@ Call/ e-mail now to make an appointment <a href="tel:4792955872"> (479)295-5872<
 
 <div class="repair_container">
   <div class="tirexr">
-    <img src="img12.jpeg" alt="xrtireRepair" class="repair_img">
-      <p class="repair_price">XR Tire Change ($25-$50)</p>
+      <img src="beforeAndAfter.jpg" alt="XR Tire Change ($25-$50)<br><br> Tires in stock, order one from us or bring your own! Get rid of that worn out stock tire and hit the trails with more tread than ever. Quick and reliable service guaranteed." class="repair_img" id="repair_img1"/>
+        <p class="repair_price">XR Tire Change ($25-$50)</p>
   </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img src="beforeAndAfter.jpg" class="modal-content" id="img01">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+  </div>
+
   <div class="tirepint">
-    <img src="img10.jpeg" alt="pinttireRepair" class="repair_img">
+    <img src="tire.jpeg" alt="Pint Tire Change ($25-$65)<br><br> Tires in stock, order one from us or bring your own! Get rid of that worn out stock tire and hit the trails with more tread than ever. Quick and reliable service guaranteed." class="repair_img" id="repair_img2"/>
       <p class="repair_price">Pint Tire Change ($25-$65)</p>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("repair_img2");
+      var modalImg = document.getElementById("img02");
+      var captionText = document.getElementById("caption2");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal2" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img src="tire.jpeg" class="modal-content" id="img02">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption2"></div>
   </div>
   <div class="gripTape">
-    <img src="img11.jpeg" alt="GripTape" class="repair_img">
+    <img src="2.jpg" alt="Remove/Install Grip Tape ($10)<br><br> Choose from a variety of colors in stock, let us order you some or bring in your own. Quick and reliable service guaranteed. " class="repair_img" id="repair_img3"/>
       <p class="repair_price">Remove/Install Grip Tape ($10)</p>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("repair_img3");
+      var modalImg = document.getElementById("img03");
+      var captionText = document.getElementById("caption3");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal3" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img src="2.jpg" class="modal-content" id="img03">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption3"></div>
   </div>
   <div class="screw">
-    <img src="https://cdn.shopify.com/s/files/1/1845/1855/products/pintaxelbolts_4d4db8ad-9fd9-40b8-bbf5-6fdda8004238_1200x1200.png?v=1606828145" alt="tireRepair" class="repair_img">
+    <img src="https://cdn.shopify.com/s/files/1/1845/1855/products/pintaxelbolts_4d4db8ad-9fd9-40b8-bbf5-6fdda8004238_1200x1200.png?v=1606828145" alt="Stripped Screw Thread Repair ($35 each)<br><br>Let us repair or replace your stripped screws quickly to get you back riding. Looking to change it up? No problem, you can choose from a variety of screws we have in stock, bring your own or let us order you some." class="repair_img" id="repair_img4"/>
       <p class="repair_price">Stripped Screw Thread Repair ($35 each)</p>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("repair_img4");
+      var modalImg = document.getElementById("img04");
+      var captionText = document.getElementById("caption4");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal4" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img src="https://cdn.shopify.com/s/files/1/1845/1855/products/pintaxelbolts_4d4db8ad-9fd9-40b8-bbf5-6fdda8004238_1200x1200.png?v=1606828145" class="modal-content" id="img04">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption4"></div>
   </div>
   <div class="headLight">
-    <img src="data:image/jpeg;base64,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" alt="headlight" class="repair_img">
+    <img src="data:image/jpeg;base64,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" alt="Head Light Repair ($150)<br><br> Let us repair, replace or upgrade your onewheel headlight. Bring in your own, choose from what we have in stock or let us order you one." class="repair_img" id="repair_img5"/>
       <p class="repair_price">Head Light Repair ($150)</p>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("repair_img5");
+      var modalImg = document.getElementById("img05");
+      var captionText = document.getElementById("caption5");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal5" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img src="" class="modal-content" id="img05">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption5"></div>
   </div>
   <div class="waterproof">
-    <img src="data:image/jpeg;base64,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" alt="waterproof" class="repair_img" alt="water" class="repair_img">
+    <img src="reflect.jpg" class="repair_img" alt="Waterproof One Wheel ($125+)<br><br>Take your onewheel anywhere after we waterproof it. The trails await!" class="repair_img" id="repair_img6"/>
       <p class="repair_price">Waterproof One Wheel ($125+)</p>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("repair_img6");
+      var modalImg = document.getElementById("img06");
+      var captionText = document.getElementById("caption6");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal6" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img src="" class="modal-content" id="img06">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption6"></div>
   </div>
   <div class="bearing">
-    <img src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20200326_232258_370x.jpg?v=1585283047" alt="bearing" class="repair_img">
+    <img src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20200326_232258_370x.jpg?v=1585283047" alt="Bearing Installation Labor ($150)<br><br>We can replace your bearings quickly and get you back out there in no time." class="repair_img" id="repair_img7"/>
       <p class="repair_price">Bearing Installation Labor ($150)</p>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("repair_img7");
+      var modalImg = document.getElementById("img07");
+      var captionText = document.getElementById("caption7");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal7" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20200326_232258_370x.jpg?v=1585283047" class="modal-content" id="img07">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption7"></div>
   </div>
   <div class="battery">
-    <img src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20210330_104148_370x.jpg?v=1617118978" alt="battery" class="repair_img">
+    <img src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20210330_104148_370x.jpg?v=1617118978" alt="Battery Install for XR & Pint ($100)<br><br>Choose one from our stock, bring your own or let us order you one. Quick repair to get you back out there in no time." class="repair_img" id="repair_img8"/>>
       <p class="repair_price">Battery Install for XR & Pint ($100)</p>
+
+      <script>
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("repair_img8");
+      var modalImg = document.getElementById("img08");
+      var captionText = document.getElementById("caption8");
+      img.onclick = function(){
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+      }
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      </script>
+
+  </div>
+
+  <!-- The Modal -->
+  <div id="myModal8" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The Image) -->
+    <img src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20210330_104148_370x.jpg?v=1617118978" class="modal-content" id="img08">
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption8"></div>
   </div>
 </div>
 
@@ -382,3 +737,25 @@ Sun:	12:00 – 10:00 PM<p>
   <a href="https://www.instagram.com/naz_t_rob/" target="_blank"><img src="https://hasselfallas.com/wp-content/uploads/2021/01/instagram-logo-png-transparent-0.png" width="35px" height="35px"></a>
   <a href="contactForm.html" target="_blank"><img src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png" width="35px" height="35px"></a>
 </footer>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("repair_img1");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>

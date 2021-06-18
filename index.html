@@ -274,7 +274,7 @@ transition: .4s;
 
 }
 .robInfo {
-  width: 600px;
+  width: auto;
   line-height: 1.6;
   font-size: 20px;
 }
@@ -307,6 +307,47 @@ transition: .4s;
 	transform: scale(1.1);
 }
 /*loader*/
+.repair_img {
+  width: 350px;
+  height: 350px;
+}
+
+.repair_price {
+  display: flex;
+
+}
+
+.repairDes {
+  font-family: "Bangers";
+  text-align: center;
+  position: relative;
+  float: left;
+
+}
+
+.repair_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: auto;
+  flex-direction: row;
+}
+
+.background {
+  background-color: #444444;
+  opacity: 0.8;
+  background-image:  radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#000000 0.5px, #444444 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0,10px 10px;
+}
+
+.inventory {
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  position: absolute;
+}
+
 
 </style>
   </head>
@@ -361,8 +402,11 @@ transition: .4s;
   </div>
 <div class="topBar" data-aos="fade-in">
 
-<p data-aos="fade-up" class="sub" id="about">Repair Service Open today until 10:00 PM<br><br>NaZ-T's Float Shop is a local shop specializing in repair or customizations to your PEV vehicles. Aimed at the One Wheel specifically, we have several partners that come together to collectively cover any needs you may have.</p>
+<p data-aos="fade-up" class="sub" id="about">Repair Service Open today until 10:00 PM<br><br>NaZ-T's Float Shop is a local shop specializing in repair or customizations to your PEV vehicles. Aimed at the One Wheel specifically, we have several partners that come together to collectively cover any needs you may have. Call/ e-mail now to make an appointment <a style="color:black;" href="tel:4792955872"> (479)295-5872</a> or fill out our easy to use service form <a style="color:black;" href="form.html"> HERE <a/></p>
         <a data-aos="zoom-in-up" data-aos-duration="3000" href="form.html"><img class="logo" src="logo.jpeg"></a>
+
+
+
 
 <div data-aos="fade-up" class="description">
   <p class="des">Commitment to Our Customers<br><br>
@@ -383,7 +427,7 @@ NazTFloaT commits to offer honest repair advice about the condition of the unit,
     </div>
 </div>
 
-<h2 class="gal" id="gallery">Gallery</h2>
+<h2 style="margin-top:50px;" class="gal" id="gallery">Gallery</h2>
 
 <!--GALLERY-->
 <section class="blog_section">
