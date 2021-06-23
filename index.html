@@ -1,591 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1-0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Buy a onewheel, upgrade your onewheel with awesome accessories and get your onewheel repaired in NWA all at Naz-T´s Float Shop.">
-    <!--styles-->
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" type="image/png" href="logo1.png">
-
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<title>Onewheelnwa</title>
-
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- Bootstrap -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-        <!-- icofont -->
-
-        <!-- carousel -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-        <link rel="stylesheet" href="FloatCarStyle.css">
-
-<!--Car-->
-
-<style>
-
-* {
- font-family: 'Roboto', sans-serif;
- color: white;
-}
-.menu {
-
-}
-
-.right {
-  float:right;
-  margin-right: 10px;
-}
-
-.main {
-  font-family: "Bangers";
-  text-align: center;
-  font-size: 80px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  display: block;
-  line-height: 1em; /* a */
-  max-height: 3em; /* a x number of line to show (ex : 2 line)  */
-  flex-shrink: inherit;
-
-}
-
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-  height: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 40%;
-}
-
-.sub {
-  text-align: center;
-  background: #4c4f4d;
-  width: 99%;
-  margin:auto;
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  font-size: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  display: block;
-}
-
-.mission {
-  text-align: center;
-  background: #4c4f4d;
-  width: 99%;
-  margin: auto;
-  padding: 5px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  font-size: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  display: block;
-}
-
-
-.des {
-  text-align: center;
-  border:;
-  background: #4c4f4d;
-  width: 99%;
-  margin:auto;
-  padding: 10px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-size: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-wrap: break-word;
-  display: block;
-}
-
-/*nav*/
-/* Add a black background color to the top navigation */
-.topnav {
-  background-color:;
-  overflow: hidden;
-
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  position: inherit;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: darkgrey;
-  color: white;
-}
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-  display: none;
-}
-
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive a.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-.gal {
-  text-align: center;
-  font-family: "Bangers";
-  font-size: 35px;
-
-}
-
-/*GALLERY*/
-.gallery1 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: auto;
-  flex-direction: row;
-}
-
-.gallery__img {
-  width: 350px;
-  height: 350px;
-}
-
-
-#social_icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
- .time {
-  text-align: center;
-  font-size: 20px;
-}
-.number {
-  text-align: center;
-
-}
-
-.topIcon {
-  float:right;
-  display: block;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-.hero__video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
-    }
-
-.hours, .contact {
-  font-family: "Bangers";
-  text-align: center;
-  font-size: 35px;
-}
-
-header {
-position: relative;
-width: 99%;
-text-align: center;
-color: white;
--webkit-transition: .4s;
-transition: .4s;
-
-}
- body {
-   background-color: #30302F;
-
- }
- .pushIt {
-   float: left;
-   position: relative;
-   margin: 37vh;
- }
-
-/*About me Rob section under gallery*/
-.aboutMe {
-  display: flex;
-  justify-content: space-around;
-  background-color: black;
-  flex-wrap: wrap;
-  width: auto;
-  flex-direction: row;
-  margin-top: 30px;
-  padding: 10px;
-
-}
-.container1 {
-  width: 500px;
-  height: 500px;
-
-}
-.robInfo {
-  width: auto;
-  line-height: 1.6;
-  font-size: 20px;
-}
-.robH3 {
-  text-align: center;
-  font-family: Bangers;
-  font-size: 30px;
-}
-
-.robI1 {
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-}
-.rob {
-  border-radius:10%;
-  width: 100%;
-  height: auto;
-  flex-shrink: inherit;
-}
-
-/* Zoom In gallery */
-.gallery1 figure img {
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-.gallery1 figure:hover img {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
-}
-/*loader*/
-.repair_img {
-  width: 350px;
-  height: 350px;
-}
-
-.repair_price {
-  display: flex;
-
-}
-
-.repairDes {
-  font-family: "Bangers";
-  text-align: center;
-  position: relative;
-  float: left;
-
-}
-
-.repair_container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  width: auto;
-  flex-direction: row;
-}
-
-.background {
-  background-color: #444444;
-  opacity: 0.8;
-  background-image:  radial-gradient(#000000 0.5px, transparent 0.5px), radial-gradient(#000000 0.5px, #444444 0.5px);
-  background-size: 20px 20px;
-  background-position: 0 0,10px 10px;
-}
-
-.inventory {
-  width: 450px;
-  height: 450px;
-  margin: auto;
-  position: absolute;
-}
-
-
-</style>
-  </head>
-
-  <div class="video">
-    <video preload="auto" muted="" autoplay="" loop="" playsinline="" id="hero-vid" class="hero__video">
-
-          <source src="floatVideoNew.mov" type="video/mp4">
-</video>
-
-<header>
-<div class="topIcon">
-  <a href="https://www.facebook.com/NazTFloat/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" width="35px" height="35px"></a>
-  <a href="https://www.instagram.com/naz_t_rob/" target="_blank"><img src="https://hasselfallas.com/wp-content/uploads/2021/01/instagram-logo-png-transparent-0.png" width="35px" height="35px"></a>
-  <a href="contactForm.html" target="_blank"><img src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png" width="35px" height="35px"></a>
-</div>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <div class="topnav" id="myTopnav">
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="service.html">Service and Repair</a>
-    <a href="form.html">Service Form</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-  <h1 class="main" id="home">Naz-T's Float Shop</h1>
-  <p class="number"><a style="color:white;" href="tel:4792955872">(479)295-5872</a></p>
-  <script>
-  function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-      x.className += " responsive";
-    } else {
-      x.className = "topnav";
-    }
-  }
-  </script>
-</header>
-
-<body>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-  AOS.init();
-</script>
-  <div class="pushIt">
-  </div>
-<div class="topBar" data-aos="fade-in">
-
-<p data-aos="fade-up" class="sub" id="about">Repair Service Open today until 10:00 PM<br><br>NaZ-T's Float Shop is a local shop specializing in repair or customizations to your PEV vehicles. Aimed at the One Wheel specifically, we have several partners that come together to collectively cover any needs you may have. Call/ e-mail now to make an appointment <a style="color:black;" href="tel:4792955872"> (479)295-5872</a> or fill out our easy to use service form <a style="color:black;" href="form.html"> HERE <a/></p>
-        <a data-aos="zoom-in-up" data-aos-duration="3000" href="form.html"><img class="logo" src="logo.jpeg"></a>
-
-
-
-
-<div data-aos="fade-up" class="description">
-  <p class="des">Commitment to Our Customers<br><br>
-NazTFloaT commits to offer honest repair advice about the condition of the unit, offer repair options based on need, and ensure that customer Onewheels are repaired properly and professionally the first time, with quality equipment parts. We commit to Treat our customers and their Onewheels with the highest regard and to offer superior customer relations, keep open lines of communication with our customers to ensure that their units are diagnosed and repaired correctly and efficiently, and to address any and all customer concerns. Finally, we commit to offer a clean and comfortable environment to our customers, to exceed our customers’ expectations in every way, and to guarantee all repairs.</p>
-</div>
-
-<!--about me Rob-->
-<div data-aos="fade-right"
-     data-aos-offset="300"
-     data-aos-duration="1000"
-     data-aos-easing="ease-in-sine" class="aboutMe">
-  <div class="container1">
-    <img class="rob" alt="Rob" src="img1.jpeg">
-  </div>
-    <div class="robInfo">
-      <h3 class="robH3">Meet Naz-T Rob</h3>
-      <p class="robI1">Hello all and welcome to Naz-T’s Float Shop! As the father of three amazing kids, husband to a spectacular wife, and a lifelong thrill seeker, I decided to take my passion for onewheel and open up a full service shop located right here in NWA. As part of the Stoke Life Service Network, Naz-T´s Float Shop has you covered from changing rail guards/grip tape to battery upgrades and more. Our mission is to get you back out there as soon as possible. Keep an eye out for our packages, dealz and community ride sessions here in NWA. Not sure if you will like it? Come in to the shop for a test ride and we´re sure you will love it. See you soon and float on! <br> -Rob</p>
-    </div>
-</div>
-
-<h2 style="margin-top:50px;" class="gal" id="gallery">Gallery</h2>
-
-<!--GALLERY-->
-<section class="blog_section">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>OnewheelNWA</title>
+        <!-- Favicon-->
+        <link rel="icon" type="icon" href="assets/img/logo.jpeg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
             <div class="container">
-                <div class="blog_content">
-                    <div class="owl-carousel owl-theme">
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="1.jpg" alt="images not found"></a>
+                <a class="navbar-brand" href="#page-top"><img style="width:70px; height:auto; border-radius:50%;" src="assets/img/logo1.png" alt="..." /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Repairs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#repairForm">Repairs Form</a></li>
+                        <button class="btn2" onclick="myFunction()"><i class="fa fa-sun"></i></button>
 
+
+                <script>
+                function myFunction() {
+                   var element = document.body;
+                   element.classList.toggle("dark-mode");
+                }
+                </script>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+            <div class="container">
+                <div class="masthead-subheading">Welcome To Naz-T´s Float Shop!</div>
+                <div class="masthead-heading text-uppercase">Repairs, Upgrades and New Orders</div>
+                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
+            </div>
+        </header>
+        <!-- Services-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Services</h2>
+                    <h3 class="section-subheading text-muted">We have everything you need for your onewheel.</h3>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-hammer fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Repairs</h4>
+                        <p class="text-muted">We offer fast and reliable repairs for anything you need on your onewheel.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-tools fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">Upgrades</h4>
+                        <p class="text-muted">We offer a wide variety of upgrades for your onewheel to take it from stock to amazing in no time.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
+                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        </span>
+                        <h4 class="my-3">New Orders and Bundles</h4>
+                        <p class="text-muted">New to onewheel? No problem! Let us help you choose what you want and bundle it with an upgrade package of your choice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Grid-->
+        <section class="page-section bg-light" id="portfolio">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Repairs</h2>
+                    <h3 class="section-subheading text-muted">Repairs and Upgrades.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 1-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/img10.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">XR Tire Change </div>
+                                <div class="portfolio-caption-subheading text-muted">($25-$50)</div>
                             </div>
                         </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="2.jpg" alt="images not found"></a>
-
-                            </div>
-
-                        </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="backpack.jpeg" alt="images not found"></a>
-
-                            </div>
-                        </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="beforeAndAfter.jpg" alt="images not found"></a>
-
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 2-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://cdn.shopify.com/s/files/1/1845/1855/products/Hoosier11x5.5-6Treaded-Small.jpg?v=1594705358" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Pint Tire Change</div>
+                                <div class="portfolio-caption-subheading text-muted">($25-$65)</div>
                             </div>
                         </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="board_helmet.JPG" alt="images not found"></a>
-
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/inventoryGrips.jpeg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Remove/Install Grip Tape</div>
+                                <div class="portfolio-caption-subheading text-muted">($10)</div>
                             </div>
                         </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="img3.jpeg" alt="images not found"></a>
-
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                        <!-- Portfolio item 4-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://cdn.shopify.com/s/files/1/1845/1855/products/pintaxelbolts_4d4db8ad-9fd9-40b8-bbf5-6fdda8004238_1200x1200.png?v=1606828145" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Stripped Screw Thread Repair</div>
+                                <div class="portfolio-caption-subheading text-muted">($35 each)</div>
                             </div>
                         </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="sunsetpic.jpg" alt="images not found"></a>
-
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                        <!-- Portfolio item 5-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="data:image/jpeg;base64,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" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Head Light Repair</div>
+                                <div class="portfolio-caption-subheading text-muted">($150)</div>
                             </div>
                         </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="img4.jpeg" alt="images not found"></a>
-
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <!-- Portfolio item 6-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/reflect.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Waterproofing</div>
+                                <div class="portfolio-caption-subheading text-muted">($125+)</div>
                             </div>
                         </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="xrRob.JPG" alt="images not found"></a>
-
+                    </div>
+                    <div class="col-lg-6 col-lg-6">
+                        <!-- Portfolio item 7-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20200326_232258_370x.jpg?v=1585283047" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Bearing Installation Labor </div>
+                                <div class="portfolio-caption-subheading text-muted">($150)</div>
                             </div>
                         </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="img5.jpeg" alt="images not found"></a>
-
-                            </div>
-                        </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="img7.jpeg" alt="images not found"></a>
-
-                            </div>
-                        </div>
-                        <div class="blog_item">
-                            <div class="blog_image">
-                                <a href="https://www.google.com/maps/uv?pb=!1s0x87c90598b53870d7%3A0x218cd57e87f70e4b!3m1!7e131!5sNaz-T%27s%20Float%20Shop!15sCgIgAQ&hl=en&imagekey=!1e3!2s-REfYruaeqnY%2FYJspvXwsetI%2FAAAAAAAAAFM%2FMuoBpp-CFsMmnY-XAdIdCppmSqZqcVBdQCNwBGAYYCw"><img class="img-fluid" src="sunset2.jpeg" alt="images not found"></a>
-
+                    </div>
+                    <div class="col-lg-6 col-smlg-6">
+                        <!-- Portfolio item 8-->
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20210330_104148_370x.jpg?v=1617118978" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Battery Install for XR & Pint</div>
+                                <div class="portfolio-caption-subheading text-muted">($100)</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- About-->
+        <section class="page-section" id="about">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">About</h2>
+                    <h3 class="section-subheading text-muted">Repair Service Hours:<br>Monday-Sunday 12:00-10:00PM<br>Call now <a href="tel:4792955872">(479)295-5872</a></h3>
+                </div>
+                <ul class="timeline">
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid1" src="assets/img/XR.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Who we are</h4>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">
+NaZ-T's Float Shop is a local shop specializing in repair or customizations to your PEV vehicles. Aimed at the One Wheel specifically, we have several partners that come together to collectively cover any needs you may have. Call/ e-mail now to make an appointment <a href="tel:4792955872">(479)295-5872</a></p></div>
+                        </div>
+                    </li>
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid1" src="assets/img/2.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Commitment to Our Customers</h4>
 
-        <!-- Jquery -->
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <!-- bootstrap -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-        <!-- carousel -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">NazTFloaT commits to offer honest repair advice about the condition of the unit, offer repair options based on need, and ensure that customer Onewheels are repaired properly and professionally the first time, with quality equipment parts. We commit to Treat our customers and their Onewheels with the highest regard and to offer superior customer relations, keep open lines of communication with our customers to ensure that their units are diagnosed and repaired correctly and efficiently, and to address any and all customer concerns. Finally, we commit to offer a clean and comfortable environment to our customers, to exceed our customers’ expectations in every way, and to guarantee all repairs.</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid1" src="assets/img/sunsetpic.jpg" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h4>Our Mission</h4>
 
-        <script>$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    dots:false,
-    nav:true,
-    autoplay:true,
-    smartSpeed: 3000,
-    autoplayTimeout:7000,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-})
-</script>
+                            </div>
+                            <div class="timeline-body"><p class="text-muted">The Mission of NazTfloaT is to provide honest OneWheel repair, quality workmanship and exceptional service. We aim to develop unmatched reputation with our customers, other shop owners, and our community. We believe that we work better together and do this by treating our employees, customers, and community as family.</p></div>
+                        </div>
+                    </li>
 
+                    <li class="timeline-inverted">
+                        <div class="timeline-image">
+                            <h4>
+                                Call
+                                <br />
+                                or email
+                                <br />
+                                and float on!
+                            </h4>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Team-->
+        <section class="page-section bg-light" id="team">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Meet Naz-T Rob</h2>
+                    <h3 class="section-subheading text-muted">Founder and lead tech.</h3>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="team-member">
+                            <img class="mx-auto rounded-circle" src="assets/img/img1.jpeg" alt="..." />
+                            <h4>Rob Mahler</h4>
+                            <p class="text-muted">Hello all and welcome to Naz-T’s Float Shop! As the father of three amazing kids, husband to a spectacular wife, and a lifelong thrill seeker, I decided to take my passion for onewheel and open up a full service shop located right here in NWA. As part of the Stoke Life Service Network, Naz-T´s Float Shop has you covered from changing rail guards/grip tape to battery upgrades and more. Our mission is to get you back out there as soon as possible. Keep an eye out for our packages, dealz and community ride sessions here in NWA. Not sure if you will like it? Come in to the shop for a test ride and we´re sure you will love it. See you soon and float on!
+-Rob</p>
+                            <a target="_blank" class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/naz_t_rob/"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/NazTFloat"><i class="fab fa-facebook-f"></i></a>
 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">Contact Us</h2>
+                    <p style="text-align:center;"><a href="tel:4792955872">(479)295-5872</a></p>
 
+                    <div class="form1">
+                      <p>* indicates a required input field</p>
+                      <form action="https://getform.io/f/9a70468f-c8cd-4cc0-9c0b-253f19aceae6" method="POST" enctype="multipart/form-data">
+                        <label for="fname">*First name:</label>
+                        <input type="text" id="fname" name="fname" value="" style="color: black" required><br><br>
+                        <label for="lname">*Last name:</label>
+                        <input type="text" id="lname" name="lname" value="" style="color: black" required><br><br>
+                        <label for="phone">*Phone number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="123-145-1678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="color: black" required><br><br>
+                        <label for="email">*Enter your email:</label>
+                        <input type="email" id="email" name="email" style="color: black" required><br><br>
+                        <label for="other">How can we help you?:</label>
+                        <textarea id="other" name="other" rows="4" cols="50" style="color: black" placeholder="Let us know what we can do for you!">
+                        </textarea>
 
-  <h2 class="contact" id="contact"><a href="contactForm.html" style="font-family: Bangers;color:white;">Contact us</a></h2>
-    <p class="number"><a style="color:white;" href="tel:4792955872">(479)295-5872</a></p>
-    <h4 class="hours">Business Hours</h4>
-      <p data-aos="flip-up" class="time">Mon:	12:00 – 10:00 PM<br>
-Tue:	12:00 – 10:00 PM<br>
-Wed:	12:00 – 10:00 PM<br>
-Thu:	12:00 – 10:00 PM<br>
-Fri:	12:00 – 10:00 PM<br>
-Sat:	8:00 AM – 10:00 PM<br>
-Sun:	12:00 – 10:00 PM<p>
+                        <input class="btn-xl" type="submit" value="Submit" style="color: #fff;background-color: #ffc800;border-color: #ffc800;">
+                      </form>
+                    </div>
+            <h3 style="text-align:center;"class="section-subheading text-muted">Onewheel®, Onewheel Plus®, XR®, and Pint® are registered trademarks of Future Motion, Inc. Not affiliated with Future Motion, Inc.</h3>
+        </section>
 
-<div data-aos="zoom-in-down" class="mission">
-  <p>The Mission of NazTfloaT is to provide honest OneWheel repair, quality workmanship and exceptional service. We aim to develop unmatched reputation with our customers, other shop owners, and our community. We believe that we work better together and do this by treating our employees, customers, and community as family.</p>
+        <!--form 2, serivce -->
+<section class="page-section repForm"  id="repairForm">
+        <h2 style="margin-top:50px;" class="formTitle">Fill out our form to schedule your services now</h2>
+<p class="formDes">Once your information is submitted, Rob will get back to you via e-mail ASAP to confirm your serivces, date and time.<br><br>(Form data sent through Getform's secure database)</p>
 </div>
-<p style="text-align: center; background-color: inherit;; width: 30%; margin: auto; font-size: 10px;";>Onewheel&reg, Onewheel Plus&reg, XR&reg, and Pint&reg are registered trademarks of Future Motion, Inc. Not affiliated with Future Motion, Inc.</p>
 </div>
-<footer>
-  <div class="topnav" id="myTopnav">
-    <a href="#home">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-    <a href="service.html">Service and Repair</a>
-    <a href="form.html">Service Form</a>
-    </a>
-  </div>
-  <div id = "social_icons">
-    <a href="https://www.facebook.com/NazTFloat/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png" width="35px" height="35px"></a>
-    <a href="https://www.instagram.com/naz_t_rob/" target="_blank"><img src="https://hasselfallas.com/wp-content/uploads/2021/01/instagram-logo-png-transparent-0.png" width="35px" height="35px"></a>
-    <a href="contactForm.html" target="_blank"><img src="https://pics.freeicons.io/uploads/icons/png/7969340901574338609-512.png" width="35px" height="35px"></a>
-</footer>
+</div>
+<p>* indicates a required input field</p>
+</div>
+<div class="form">
+  <form action="https://getform.io/f/9a70468f-c8cd-4cc0-9c0b-253f19aceae6" method="POST" enctype="multipart/form-data">
+    <label for="fname">*First name:</label>
+    <input type="text" id="fname" name="fname" value="" style="color: black" required><br><br>
+    <label for="lname">*Last name:</label>
+    <input type="text" id="lname" name="lname" value="" style="color: black" required><br><br>
+    <label for="phone">*Phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-145-1678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="color: black" required><br><br>
+    <label for="email">*Enter your email:</label>
+    <input type="email" id="email" name="email" style="color: black" required><br><br>
+    <label for="date">*Desired date of service:</label>
+    <input type="date" name="date" value="" style="color: black" required><br><br>
+    <label for="services">*Requested Services:</label><br><br>
+      <input type="checkbox" id="s1" name="s1" value="xrtire">
+      <label for="s1">XR Tire Change ($25-$50)</label><br><br>
+      <input type="checkbox" id="s2" name="s2" value="pintTire">
+      <label for="s2">Pint Tire Change ($25-$65)</label><br><br>
+      <input type="checkbox" id="s3" name="s3" value="grip">
+      <label for="s3">Remove/Install Grip Tape ($10)</label><br><br>
+      <input type="checkbox" id="s4" name="s4" value="screw">
+      <label for="s4">Stripped Screw Thread Repair ($35 each)</label><br><br>
+      <input type="checkbox" id="s5" name="s5" value="light">
+      <label for="s5">Head Light Repair ($150)</label><br><br>
+      <input type="checkbox" id="s6" name="s6" value="waterP">
+      <label for="s6">Waterproof One Wheel ($125+)</label><br><br>
+      <input type="checkbox" id="s7" name="s7" value="bearing">
+      <label for="s7">Bearing Installation Labor ($150)</label><br><br>
+      <input type="checkbox" id="s8" name="s8" value="battery">
+      <label for="s8">Battery Install for XR & Pint ($100)</label><br><br>
+    <label for="other">Other services not listed:</label>
+    <textarea id="other" name="other" rows="4" cols="50" style="color: black" placeholder="Let us know what we can do for you!">
+    </textarea>
 
-  </body>
-</main>
+<div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" value="Submit" type="submit">Submit</button></div>
+  </form>
+</div>
+</section>
+        <!-- Footer-->
+        <footer class="footer py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div>
+</div>
+                      <p style="text-align:center;"><a href="tel:4792955872">(479)295-5872</a></p>
+                    <div class="col-lg-12 my-3 my-lg-0">
+                        <a target="_blank" class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/naz_t_rob/"><i class="fab fa-instagram"></i></a>
+                        <a target="_blank" class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/NazTFloat"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">XR Tire Change ($25-$65)</h2>
+                                    <p class="item-intro text-muted">In stock or bring your own.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/img10.jpeg" alt="..." />
+                                    <p>Get that old stock tire off your onewheel and hit the trials with a new XR tire. We have a wide variety in stock or you can bring your own and we will put it on and you will be hitting the trails in no time!</p>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Pint Tire Change ($25-$65)</h2>
+                                    <p class="item-intro text-muted">In stock or bring your own.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/tire.jpeg" alt="..." />
+                                    <p>Get that old stock tire off your onewheel and hit the trials with a new pint tire. We have a wide variety in stock or you can bring your own and we will put it on and you will be hitting the trails in no time!</p>
+
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Remove/install grip ($10)</h2>
+                                    <p class="item-intro text-muted">In stock or bring your own.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/inventoryGrips.jpeg" alt="..." />
+                                    <p>Choose from a variety of colors and styles of grip or bring your own. This fast service will make sure you have maximum grip while hitting the trails or trying that new trick.</p>
+
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Stripped Screw Thread Repair ($35 each)</h2>
+                                    <p class="item-intro text-muted">Repair or buy new.</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://cdn.shopify.com/s/files/1/1845/1855/products/pintaxelbolts_4d4db8ad-9fd9-40b8-bbf5-6fdda8004238_1200x1200.png?v=1606828145" alt="..." />
+                                    <p>Come in and repair those pesky stripped screw threads or buy some new ones. If we do not have what you are looking for in stock we will order it for you and install it quickly and easily and get you riding in no time.</p>
+
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Head Light Repair ($150)</h2>
+                                    <p class="item-intro text-muted">Bring your own, buy from us or let us order for you!</p>
+                                    <img class="img-fluid d-block mx-auto" src="data:image/jpeg;base64,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" alt="..." />
+                                    <p>Let us repair or replace your headlight. Bring your own or use one that we have in stock. We can order you a wide variety or different lights to customize your onewheel and get it just the way you want it.</p>
+                                    <ul class="list-inline">
+
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Waterproof One Wheel ($125+)</h2>
+                                    <p class="item-intro text-muted">Take your onewheel anywhere</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/reflect.jpg" alt="..." />
+                                    <p>Are you ready to take your onewheel off the beaten trail and take your riding to the max? Get your onewheel waterproofed and float to places you could not have dreamed of before.</p>
+
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 7 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Bearing Installation Labor ($150)</h2>
+                                    <p class="item-intro text-muted">Bearing installation fast.</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20200326_232258_370x.jpg?v=1585283047" alt="..." />
+                                    <p>Get your bearings installed the right way quickly and easily.</p>
+
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 8 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Battery Install for XR & Pint ($100)</h2>
+                                    <p class="item-intro text-muted">New battery installed right.</p>
+                                    <img class="img-fluid d-block mx-auto" src="https://cdn.shopify.com/s/files/1/0259/4793/0672/products/20210330_104148_370x.jpg?v=1617118978" alt="..." />
+                                    <p>Let us install your new battery quickly and securly. You can bring your own, buy one from us or let us order you one.</p>
+
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-times me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
