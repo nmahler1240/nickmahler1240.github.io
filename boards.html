@@ -613,7 +613,6 @@
   .img-fluid {
     width: 300px;
     height: 250px;
-    margin-left: 7%;
   }
   .img-fluid1 {
     max-width: 100%;
@@ -11442,128 +11441,189 @@
         line-height: 1.6;
         text-align: left;
       }
-      /* The hero image */
-.hero-image {
-  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("woods.jpg");
+
+section#contact {
+  background-color: #212529;
+  background-image: url("../assets/img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#contact .section-heading {
+  color: #fff;
+}
+section#contact form#contactForm .form-group {
+  margin-bottom: 1.5rem;
+}
+section#contact form#contactForm .form-group input,
+section#contact form#contactForm .form-group textarea {
+  padding: 1.25rem;
+}
+section#contact form#contactForm .form-group input.form-control {
+  height: auto;
+}
+section#contact form#contactForm .form-group-textarea {
+  height: 100%;
+}
+section#contact form#contactForm .form-group-textarea textarea {
+  height: 100%;
+  min-height: 10rem;
+}
+section#contact form#contactForm p.help-block {
+  margin: 0;
+}
+section#contact form#contactForm .form-control:focus {
+  border-color: #ffc800;
+  box-shadow: none;
+}
+section#contact form#contactForm ::-webkit-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm ::-moz-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+section#contact form#contactForm :-ms-input-placeholder {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  color: #ced4da;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.form1 {
+  padding: 12px 20px;
+  background-color: #171716;
+  opacity: 80%;
+  position: relative;
+  width: 95%
+  padding: 12px 20px;
+  color: white;
+
+}
+.repForm{
+  background-color: black;
+  color:white;
+}
+.slsCert{
+  width: 150px;
+
+}
+/*background HERO*/
+.parallax {
+  /* The image used */
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("duoAngelFront.jpg");
+  background-size: cover;
 
   /* Set a specific height */
-  min-height: 900px;
-  min-width:100%;
+  min-height: 685px;
 
-  /* Position and center the image to scale nicely on all screens */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
-  margin:auto;
 }
 
-/* Place text in the middle of the image */
-.hero-text {
-  text-align: center;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
     </style>
-    <!--BLOG START->
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img style="width:70px; height:auto; border-radius:50%;" src="logo1.png" alt="naz-t's float shop" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              Menu
-                <i class="fas fa-bars ms-1"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="rental.html">Rentals</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html/#portfolio">Repairs/Services</a></li>>
-                    <li class="nav-item"><a class="nav-link" href="index.html/#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html/#team">Team</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html/#gallery">Gallery</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#index.html/#repairForm">Repairs Form</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html/#contact">Contact</a></li>
-                    <button class="btn2" onclick="myFunction()"><i class="fa fa-sun"></i></button>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img style="width:70px; height:auto; border-radius:50%;" src="logo1.png" alt="naz-t's float shop" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                  Menu
+                    <i class="fas fa-bars ms-1"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="rental.html">Rentals</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html/#portfolio">Repairs/Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html/#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html/#team">Team</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html/#gallery">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html/#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html/#repairForm">Repairs Form</a></li>
+                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                        <button class="btn2" onclick="myFunction()"><i class="fa fa-sun"></i></button>
 
 
-            <script>
-            function myFunction() {
-               var element = document.body;
-               element.classList.toggle("dark-mode");
-            }
-            </script>
-                </ul>
+                <script>
+                function myFunction() {
+                   var element = document.body;
+                   element.classList.toggle("dark-mode");
+                }
+                </script>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-<body>
-  <div class="hero-image img-fluid">
-  <div class="hero-text">
-    <h1 class="bh" style="font-family: "Montserrat"";><strong>Naz-T's Blog</strong></h1>
-    <p class="bsh" style="font-family: "Roboto Slab"";>Here we will post upcoming events and Onewheel related news, articles and content. Tag us on Instagram or Facebook in pictures from your latest ride sessions to be featured! Make sure to include where in NWA you went riding. </p>
-  </div>
-</div>
-<section class="blog">
-<div class="container-fluid">
-  <div class="row" style="padding-top: 50px;">
-    <div class="col-md-6 text-center">
-      <img style="padding-top:10px;" class="imgb" src="sunset2.jpeg" alt="Onewheel_repair">
-    </div>
-    <div class="col-md-6">
-      <h3 class="txth" style="font-family: "Montserrat"";>Onewheel craze hits NWA</h3>
-      <p class="txt" style="font-family: "Roboto Slab"";>For years outdoor enthusiasts have been flocking to NWA for its beautiful trails and outdoor activities and now the Onewheel crowd is no exception. Onewheel is the newest trend in personal electric vehicles (PEV) that has hit the area recently and its popularity is growing fast.<br><br>
+        <div class="parallax">
+          <h1 class="text-center" style="text-shadow: 1px 1px black;color: white;padding-top:250px;font-size:3.5rem;font-family:"Montserrat"";>Page Under Construction: Sweet boards coming SOON!</h1>
+            <p class="text-center" style="text-shadow: 1px 1px black;color: white;padding-top:50px;font-size:1.5rem;font-family:"Montserrat"";>In the meantime, check out our rentals!</p>
+              <div style="padding-top:40px; padding-bottom:40px;" class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <a target="_blank" style="text-shadow: 1px 1px black;" class="btn btn-primary btn-lg" href="https://10to8.com/book/xpttwovrzqsmvjegrj/" role="button">Reservations</a>
+              </div>
+            </div>
 
-So what is all the hype about? The Onewheel was invented by Future Motion Inc. founder and CEO, Kyle Doerksen. Since 2016 it has slowly become a must have for some thrill seekers and PEV lovers.
-Onewheel’s single wheel contains a brushless electric motor that spins to propel riders forwards or backwards, and makes thousands of micro-adjustments per second to keep riders balanced. To use the board, riders place their feet on either side of the wheel. Riders’ front feet go on top of two pressure-sensitive pads that detect when riders are on the board.To direct the board, riders lean slightly in the direction they want to travel.To stop, riders lift their heel off the side of the front footpad.<br><br>
-All models use 'Pushback' to warn the rider that they are about to reach the maximum safe speed. Pushback gently forces the nose of the Onewheel up when riders approach unsafe speeds, alerting riders that they need to slow down.
-<br><br>Riders can choose to use an app that displays battery charge and miles traveled, and regulates different modes for the rider. The app also allows riders to control other board functions to personalize how the board responds to their riding style.
-<br><br>NWA is a natural fit for this type of PEV due to its extensive trails network and outdoors areas. In keeping up with this newest trend Robert Mahler recently founded <a style="color:#a65b00;"href="onewheelnwa.com">Naz-T’s Float shop</a> in Bentonville Arkansas. His shop organizes community rides as well as offers repairs, upgrades, new board orders and parts installations of all models of Onewheels. Hit the trails this summer on a onewheel and see what the hype is all about!
-<br><br>7/19/2021 <a style="color:#a65b00;" href="https://en.wikipedia.org/wiki/Onewheel"> More info</a></p>
-    </div>
 
-  </div>
 
-</div>
 
-<div class="container-fluid">
-  <div class="row" style="padding-top: 50px;">
-    <div class="col-md-6">
-      <h3 class="txth" style="font-family: "Montserrat"";>Bentonville First Friday Event</h3>
-      <p class="txt" style="font-family: "Roboto Slab"";>Join us at the annual “back to school” Bentonville first Friday event at the square August 6th!!!! We will have a tent setup and our team available to answer any questions. Stickers will be available as supplies last.<br><br>7/20/2021 <a style="color:#a65b00;" href="https://www.facebook.com/events/981911982568970"> More info</a></p>
-    </div>
-      <div class="col-md-6 text-center">
-        <img style="padding-top:10px;" class="imgb" src="sunsetlighting.jpg" alt="Onewheel_events">
-      </div>
-  </div>
 
-</div>
+            <!-- Contact-->
+            <section class="page-section" id="contact">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-heading text-uppercase">Contact Us</h2>
+                        <p style="text-align:center;"><a href="tel:4792955872">(479)295-5872</a></p>
 
-<div class="col-md-6">
-  <h3 class="txth" style="font-family: "Montserrat"";>Onewheel Rentals in NorthWest Arkansas</h3>
-  <p class="txt" style="font-family: "Roboto Slab"";>
-<br><br>7/19/2021 <a style="color:#a65b00;" href="https://en.wikipedia.org/wiki/Onewheel"> More info</a></p>
-</div>
+                        <div class="form1">
+                          <p>* indicates a required input field</p>
+                          <form action="https://getform.io/f/9a70468f-c8cd-4cc0-9c0b-253f19aceae6" method="POST" enctype="multipart/form-data">
+                            <label for="fname">*First name:</label>
+                            <input type="text" id="fname" name="fname" value="" style="color: black" required><br><br>
+                            <label for="lname">*Last name:</label>
+                            <input type="text" id="lname" name="lname" value="" style="color: black" required><br><br>
+                            <label for="phone">*Phone number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="123-145-1678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="color: black" required><br><br>
+                            <label for="email">*Enter your email:</label>
+                            <input type="email" id="email" name="email" style="color: black" required><br><br>
+                            <label for="other">How can we help you?:</label>
+                            <textarea id="other" name="other" rows="4" cols="50" style="color: black" placeholder="Let us know what we can do for you!">
+                            </textarea>
 
+                            <div class="g-recaptcha" data-sitekey="6Lf6oc4bAAAAAJ2W0U2lwzhFs_y9XXGH3Zf--xv-"></div>
+
+                            <input class="btn-xl" type="submit" value="Submit" style="color: #fff;background-color: #ffc800;border-color: #ffc800;">
+                          </form>
+                        </div>
+                <h3 style="text-align:center;"class="section-subheading text-muted">Onewheel®, Onewheel Plus®, XR®, and Pint® are registered trademarks of Future Motion, Inc. Not affiliated with Future Motion, Inc.</h3>
+            </section>
+            <!-- Footer-->
+            <footer class="footer py-4">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div>
+            </div>
+                          <p style="text-align:center;"><a style="color:grey;" href="tel:4792955872">(479)295-5872</a></p>
+                        <div class="col-lg-12 my-3 my-lg-0">
+                            <a target="_blank" class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/naz_t_rob/"><i class="fab fa-instagram"></i></a>
+                            <a target="_blank" class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/NazTFloat"><i class="fab fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
 </body>
-<!-- Footer-->
-<footer class="footer py-4">
-    <div class="container">
-        <div class="row align-items-center">
-            <div>
-</div>
-              <p style="text-align:center;"><a style="color:#a65b00;" href="tel:4792955872">(479)295-5872</a></p>
-            <div class="col-lg-12 my-3 my-lg-0">
-                <a target="_blank" class="btn btn-dark btn-social mx-2" href="https://www.instagram.com/naz_t_rob/"><i class="fab fa-instagram"></i></a>
-                <a target="_blank" class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/NazTFloat"><i class="fab fa-facebook-f"></i></a>
-            </div>
-        </div>
-    </div>
-</footer>
-</section>
 </html>
