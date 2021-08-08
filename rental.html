@@ -11541,10 +11541,20 @@ section#contact form#contactForm :-ms-input-placeholder {
   background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("floatpic1.jpg");
   background-size: cover;
   min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-device-width: 1024px){.parallax {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)) , url("floatpic1.jpg");
+  background-size: cover;
+  min-height: 100vh;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
 }
 /*
 @media screen and (max-width: 768px) {
