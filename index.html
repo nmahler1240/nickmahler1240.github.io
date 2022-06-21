@@ -11485,7 +11485,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   width: 150px;
 
 }
+@media (max-width: 500px) {
+  .banner {
+    margin-top: 110px;
+  }
+}
+@media (max-width: 950px) {
+  .banner {
+    margin-top: 110px;
+  }
+}
+.banner {
+  animation: blinker 2s linear infinite;
+}
 
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
     </style>
     <body id="page-top">
         <!-- Navigation-->
@@ -11522,6 +11540,12 @@ section#contact form#contactForm :-ms-input-placeholder {
             </div>
         </nav>
         <!-- Masthead-->
+
+<!--June Special Banner-->
+<div class="banner text-center" style="margin-bottom: -8px;">
+  <h1 style="color:black;font-size:20px;background-color:#ffc800;">JUNE SALE! Buy one get one sale on all rentals. Buy a day rental get a day rental.</h1>
+</div>
+
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome To Naz-T´s Float Shop!</div>
